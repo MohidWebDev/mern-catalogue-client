@@ -7,7 +7,7 @@
 ## 🔗 Related Repository
 
 This is the **frontend** half of a two-part project.
-👉 **Backend repo:** [mern-catalogue-api](https://github.com/YOUR_USERNAME/mern-catalogue-api)
+👉 **Backend repo:** [mern-catalogue-api](https://github.com/MohidWebDev/mern-catalogue-api.git)
 
 > ⚠️ The backend must be running locally before you start the frontend.
 
@@ -129,5 +129,5 @@ Password: abc123
 
 ## 👤 Author
 
-**Your Name**
-GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+**Mohid Yaseen**
+GitHub: [@MohidWebDev](https://github.com/MohidWebDev)
