@@ -1,16 +1,133 @@
-# React + Vite
+# 🛒 MERN Catalogue — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> React frontend for the MERN Catalogue App. Lets users browse, add, edit, and delete products in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Related Repository
 
-## React Compiler
+This is the **frontend** half of a two-part project.
+👉 **Backend repo:** [mern-catalogue-api](https://github.com/YOUR_USERNAME/mern-catalogue-api)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> ⚠️ The backend must be running locally before you start the frontend.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Technology   | Purpose                 |
+| ------------ | ----------------------- |
+| React        | UI framework            |
+| Vite         | Build tool & dev server |
+| React Router | Client-side routing     |
+| Tailwind CSS | Styling                 |
+| Context API  | Auth state management   |
+
+---
+
+## ✨ Features
+
+- 🔐 Login page with protected routes
+- 📦 Product catalogue fetched live from the backend
+- ➕ Add a new product via modal form
+- ✏️ Edit a product inline on its detail page
+- 🗑️ Delete a product with one click
+- ⚡ All changes reflect instantly without page refresh
+
+---
+
+## 📁 Folder Structure
+
+```
+LOGIN-FORM-PROJECT/
+├── src/
+│   ├── context/
+│   │   └── AuthContext.jsx     # Login/logout state
+│   ├── pages/
+│   │   ├── Login.jsx           # Login screen
+│   │   ├── Dashboard.jsx       # Product grid + Add + Delete
+│   │   └── ProductDetails.jsx  # Single product view + Edit
+│   ├── App.jsx                 # Route definitions
+│   ├── main.jsx                # React entry point
+│   └── index.css               # Global styles
+├── .env                        # API URL config (NOT pushed to GitHub)
+├── .gitignore
+├── index.html
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
+```
+
+---
+
+## ⚙️ Local Setup
+
+### 1. Make sure the backend is running first
+
+Follow setup instructions in the [backend repo](https://github.com/YOUR_USERNAME/mern-catalogue-api).
+The API must be live at `http://localhost:5050`.
+
+### 2. Clone this repo
+
+```bash
+git clone https://github.com/YOUR_USERNAME/mern-catalogue-client.git
+cd mern-catalogue-client
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Create your `.env` file
+
+Create a file named `.env` in the root folder and add:
+
+```
+VITE_API_URL=http://localhost:5050
+```
+
+### 5. Run the development server
+
+```bash
+npm run dev
+```
+
+App starts at: **http://localhost:5173**
+
+---
+
+## 🔐 Default Login Credentials
+
+```
+Email:    example@gmail.com
+Password: abc123
+```
+
+> This is a hardcoded dummy user for demo purposes. No real authentication is implemented.
+
+---
+
+## 🖥️ Pages Overview
+
+| Route           | Page            | Description                         |
+| --------------- | --------------- | ----------------------------------- |
+| `/`             | Login           | Enter credentials to access the app |
+| `/dashboard`    | Dashboard       | View all products, add or delete    |
+| `/products/:id` | Product Details | View full info, edit the product    |
+
+---
+
+## 🔐 Environment Variables
+
+| Variable       | Description                    |
+| -------------- | ------------------------------ |
+| `VITE_API_URL` | URL of the running backend API |
+
+---
+
+## 👤 Author
+
+**Your Name**
+GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
